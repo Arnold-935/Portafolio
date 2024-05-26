@@ -22,10 +22,6 @@ const Index = () =>(
                             Estudiante de la UCR desde 2019, graduado del Colegio Academico de Boruca. Originario de Las Brisas de Cabagra,
                             estudio informatica empresarial como parte de un proyecto personal que tengo a futuro.
                             </p>
-
-                            <Link href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="btn btn-light">
-                                Hire me
-                            </Link>
                         </div>
                     </div>
                 </div>
@@ -72,8 +68,8 @@ const Index = () =>(
                         }    
                     </ul>
 
-                    <Link href="/experiences" class="btn btn-light">
-                            Know More
+                    <Link href="https://wa.me/+50683578230" class="btn btn-light">
+                            Call to action
                     </Link>
                     </div>
                 </div>
@@ -86,10 +82,10 @@ const Index = () =>(
                 <div class="card card-body bg-dark">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="text-center text-light">Portafolio</h1>
+                            <h1 class="text-center text-light">Fulfilled Projects</h1>
                         </div>
                             {
-                                projects.map(({name, description, image}, i) =>(
+                                projects.map(({name, description, image, link}, i) =>(
                                     <div class="col-md-4 p-2" key={i}>
                                         <div class="card card-body bg-light h-100">
                                             <div class="overflow">
@@ -99,7 +95,7 @@ const Index = () =>(
                                             <div class="card-body">
                                             <h3>{name}</h3>
                                             <p>{description}</p>
-                                            <Link href="#!" class="btn btn-light">
+                                            <Link href={link} class="btn btn-light">
                                                     Know More
                                             </Link>
                                             </div>
